@@ -9,11 +9,39 @@
         .card-img-overlay{
             background-color: rgba(0,0,0,0.5);
         } 
+        img{
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
     </style>
 </head>
 <body>
-    <h1>Bootstrap - Cards</h1>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark mb-5" data-bs-theme="dark">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="/Cards.html">Bootstrap - Cards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Carousel.html">Carrocel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nao definido</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
+        <!-- Cards do bootstrap da pagina -->
         <div class="row">
             <div class="col-4">
 
@@ -25,7 +53,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Cards do Bootstrap</h4>
                         <p class="card-text">
-                            conheça os cards dos bootstrap e suas variaçoes.
+                            conheça os cards dos bootstrap e suas variaçoes com cores de fundo Dark.
                         </p>
                         <a href="#" class="btn btn-primary">leia mais</a>
                     </div>
@@ -38,26 +66,26 @@
                 <div class="card text-bg-dark">
                     <img src="./imagens/ai-generated-8542287_640.jpg" alt="">
                     <div class="card-img-overlay">
-                        <h4 class="card-title">Titulo card</h4>
-                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <h4 class="card-title mb-4">Cards Texto sobre a imagens</h4>
+                        <h5 class="card-subtitle"></h5>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit placeat rerum voluptatum, architecto dolore eligendi aperiam praesentium labore necessitatibus explicabo ab fugiat minus ipsam cumque, mollitia cum at enim?
+                            Cards muito bonitos usando um fundo preto e com uma opacidade de 50% para legibilidade do texto.
                         </p>
-                        <a href="#" class="btn btn-primary">Botao do card</a>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
                     <div class="card-header">
-                        Cabeçario Card
+                        Desenvolvimento com Bootstrap
                     </div>
                     <img src="./imagens/ai-generated-8545082_640.png" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Titulo card</h4>
-                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <h4 class="card-title">Bootstrap variaçoes</h4>
+                        <h5 class="card-subtitle">Cards Fundo branco</h5>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit placeat rerum voluptatum, architecto dolore eligendi aperiam praesentium labore necessitatibus explicabo ab fugiat minus ipsam cumque, mollitia cum at enim?
+                            Card com fundo branco e suas variaçoes usando bootstrap.    
                         </p>
                         <a href="#" class="btn btn-primary">Botao do card</a>
                     </div>
