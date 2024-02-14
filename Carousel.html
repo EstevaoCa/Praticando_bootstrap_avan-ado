@@ -17,7 +17,7 @@
     <!-- Menu de Navegação -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark mb-5" data-bs-theme="dark">
         <div class="container-fluid container">
-            <a class="navbar-brand" href="./Carrocel.html">Bootstrap - Carrocel</a>
+            <a class="navbar-brand" href="./Carousel.html">Bootstrap - Carrocel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,14 +30,39 @@
                         <a class="nav-link active" aria-current="page" href="./Carousel.html">Carousel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nao definido</a>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+                            Ver Detalhes
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
 
+    <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Título da modal -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Bem-vindo à Minha Página</h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                </div>
+
+                <!-- Corpo da modal -->
+                <div class="modal-body">
+                    <p>Olá! Bem-vindo à minha página. Sou muito feliz em tê-lo(a) aqui. Espero que você goste do conteúdo que preparei para você. Sinta-se à vontade para explorar e conhecer mais sobre o que tenho a oferecer.</p>
+                </div>
+
+                <!-- Rodapé da modal -->
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                    <button data-bs-dismiss="modal" class="btn btn-success">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
         <!-- Carrocel Slide da pagina -->
         <div id="carousel-exemplo" class="carousel carousel-fade slide mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
